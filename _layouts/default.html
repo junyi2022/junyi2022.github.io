@@ -1,0 +1,32 @@
+<!-- main layout that will contain repeated elements -->
+<!DOCTYPE html>
+	<html>
+		<head>
+            <!-- {{}} liquid tags used to inject content into the final web page -->
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+		</head>
+		<body>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about">About</a></li>
+                    <li><a href="/projects">Projects</a></li>
+	        		<li><a href="/cv">CV</a></li>
+	        		<li><a href="/blog">Blog</a></li>
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			{{ content }}
+			
+			</div><!-- /.container -->
+			<footer>
+	    		<ul>
+	        		<li><a href="junyi2022@berkeley.edu">email</a></li>
+	        		<li><a href="https://github.com/junyi2022">github.com/junyi2022</a></li>
+				</ul>
+			</footer>
+		</body>
+	</html>

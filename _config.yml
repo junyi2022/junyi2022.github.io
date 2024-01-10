@@ -1,0 +1,3 @@
+# telling Jekyll the name of our site and what version of Markdown we'd like to use
+name: Hank Quinlan, Horrible Cop
+markdown: kramdown
