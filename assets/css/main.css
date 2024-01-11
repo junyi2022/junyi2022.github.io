@@ -98,19 +98,19 @@ img {
 .about {
     display: flex;
     flex-direction: row;
-    width: 120%;
+    width: 110%;
 }
 
 .bar {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 300px;
 }
 
 .resume {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 850px;
 }
 
 .UPenn {
