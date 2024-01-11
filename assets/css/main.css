@@ -74,6 +74,14 @@ p {
     margin-bottom: 10px;
 }
 
+.notes li {
+    font-size: 1.2em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
@@ -149,6 +157,11 @@ img {
 
 .lead, .wind, .erie, .alaska {
     width: 20rem;
+}
+
+.projectFlow {
+    display: flex;
+    flex-direction: column;
 }
 
 /* navigation style */
