@@ -37,7 +37,7 @@ h2 {
     font-size: 2.5em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     margin: 0;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
@@ -99,6 +99,7 @@ img {
     display: flex;
     flex-direction: row;
     width: 110%;
+    margin-top: 3em;
 }
 
 .bar {
@@ -109,13 +110,15 @@ img {
 }
 
 .portrait {
-    width: 90%;
+    width: 80%;
+    margin-bottom: 20px;
 }
 
 .resume {
     display: flex;
     flex-direction: column;
     width: 850px;
+    margin-left: 25px;
 }
 
 .UPenn, .CED, .CNR, .EMLab, .Sasaki, .SWA, .MVZ, .Panaroma {
@@ -129,6 +132,7 @@ img {
 
 .time {
     width: 20%;
+    margin-left: 40px;
 }
 
 /* navigation style */
