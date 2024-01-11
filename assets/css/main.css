@@ -137,7 +137,7 @@ img {
 
 /* Project style */
 
-.geospatial {
+.geospatial, .ud {
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
@@ -147,7 +147,7 @@ img {
     border-bottom: 1px solid #d5d5d5;
 }
 
-.lead, .wind, .erie {
+.lead, .wind, .erie, .alaska {
     width: 20rem;
 }
 
