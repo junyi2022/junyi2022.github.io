@@ -142,12 +142,12 @@ img {
     flex-direction: row;
     flex-wrap:wrap;
     justify-content:space-between;
-    width: 100%;
+    width: 110%;
     margin-top: 3em;
 }
 
 .lead, .wind, .erie {
-    width: 300px;
+    width: 20rem;
 }
 
 /* navigation style */
