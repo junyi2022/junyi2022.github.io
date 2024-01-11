@@ -1,6 +1,6 @@
 body {
     margin: 60px auto;
-    width: 90%;
+    width: 75%;
 }
 
 .container {
@@ -69,6 +69,9 @@ p {
     font-size: 1.2em;
     line-height: 1.4em;
     color: #333;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -95,22 +98,32 @@ img {
 .about {
     display: flex;
     flex-direction: row;
+    width: 120%;
 }
 
 .bar {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 20%;
 }
 
 .resume {
     display: flex;
     flex-direction: column;
+    width: 80%;
 }
 
 .UPenn {
     display: flex;
     flex-direction: row;
+}
+
+.event {
+    width: 80%;
+}
+
+.time {
+    width: 20%;
 }
 
 /* navigation style */
