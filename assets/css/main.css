@@ -105,6 +105,11 @@ img {
     display: flex;
     flex-direction: column;
     width: 300px;
+    align-items: center;
+}
+
+.portrait {
+    width: 90%;
 }
 
 .resume {
@@ -113,7 +118,7 @@ img {
     width: 850px;
 }
 
-.UPenn {
+.UPenn, .CED, .CNR, .EMLab, .Sasaki, .SWA, .MVZ, .Panaroma {
     display: flex;
     flex-direction: row;
 }
