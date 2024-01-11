@@ -4,5 +4,5 @@ permalink: /:title
 plugins:   [jekyll-sitemap, jekyll-feed,  jekyll-seo-tag]
 
 # telling Jekyll the name of our site and what version of Markdown we'd like to use
-name: Hank Quinlan, Horrible Cop
+name: Junyi Yang Portfolio Website
 # permalink: /blog/:year/:month/:day/:title
