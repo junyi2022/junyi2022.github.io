@@ -142,8 +142,9 @@ img {
     flex-direction: row;
     flex-wrap:wrap;
     justify-content:space-between;
-    width: 110%;
+    width: 100%;
     margin-top: 3em;
+    border-bottom: 1px solid #d5d5d5;
 }
 
 .lead, .wind, .erie {
