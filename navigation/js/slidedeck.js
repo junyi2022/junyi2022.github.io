@@ -109,8 +109,8 @@ class SlideDeck {
       },
       ),
     })
-        .bindTooltip((l) => l.feature.properties.title) // set tooltip display
-        .addTo(this.dataLayer);
+      .bindTooltip((l) => l.feature.properties.title) // set tooltip display
+      .addTo(this.dataLayer);
 
     return geoJsonLayer;
   }
