@@ -1,10 +1,16 @@
+html {
+    margin: 0;
+}
+
 body {
     margin: 60px auto;
     width: 75%;
+    color: #3f3f3f;
 }
 
 .container {
     width: 100%;
+    color: #3f3f3f;
 }
 
 nav ul, footer ul {
@@ -104,6 +110,12 @@ img {
     margin-bottom: 20px;
 }
 
+.mountain {
+    margin: 0;
+    margin-left: -17%;
+    width: 102vw;
+}
+
 /* About style */
 
 .about {
@@ -111,28 +123,43 @@ img {
     flex-direction: row;
     width: 110%;
     margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 .bar {
+    width: 300px;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+}
+
+.pinned {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 100%;
     align-items: center;
 }
 
 .portrait {
     width: 80%;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.contact {
+    margin: 0;
 }
 
 .resume {
     display: flex;
     flex-direction: column;
     width: 850px;
-    margin-left: 25px;
+    margin-left: 50px;
 }
 
-.UPenn, .CED, .CNR, .EMLab, .Sasaki, .SWA, .MVZ, .Panaroma {
+.resume-class, .portrait, .project-class {
+    margin-top: 55px;
+}
+
+.UPenn, .CED, .CNR, .EMLab, .Sasaki, .SWA, .MVZ, .Panaroma, .media2, .sense {
     display: flex;
     flex-direction: row;
 }
@@ -154,7 +181,6 @@ img {
     flex-wrap:wrap;
     justify-content:space-between;
     width: 100%;
-    margin-top: 3em;
     border-bottom: 1px solid #d5d5d5;
 }
 
