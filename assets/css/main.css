@@ -1,9 +1,10 @@
 html {
     margin: 0;
+    height: 100%;
 }
 
 body {
-    margin: 60px auto;
+    margin: 0px auto;
     width: 75%;
     color: #3f3f3f;
 }
@@ -155,9 +156,14 @@ img {
     margin-left: 50px;
 }
 
-.resume-class, .portrait, .project-class {
-    margin-top: 55px;
+hr {
+    border-width: 2px;
+    width: 100%;
 }
+
+/* .resume-class, .portrait, .project-class {
+    margin-top: 55px;
+} */
 
 .UPenn, .CED, .CNR, .EMLab, .Sasaki, .SWA, .MVZ, .Panaroma, .media2, .sense {
     display: flex;
