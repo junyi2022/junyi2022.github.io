@@ -79,14 +79,16 @@ p {
     margin: 0;
     margin-top: 10px;
     margin-bottom: 10px;
+    text-align: justify;
+    text-align-last: left;
 }
 
 .notes li {
     font-size: 1.08em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     margin: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -181,6 +183,12 @@ hr {
 
 /* Project style */
 
+.project-container {
+    position: relative;
+    width: 90%;
+    left: 5%;
+}
+
 .geospatial, .ud, .la {
     display: flex;
     flex-direction: row;
@@ -194,10 +202,6 @@ hr {
     width: 23rem;
 }
 
-.projectFlow {
-    display: flex;
-    flex-direction: column;
-}
 
 .notes {
     margin: 0;
