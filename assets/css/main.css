@@ -193,16 +193,20 @@ hr {
     left: 5%;
 }
 
-.geospatial, .ud, .la {
+.plink {
+    margin-right: 60px;
+}
+
+.geospatial, .ud, .la, .og {
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-    justify-content:space-between;
-    width: 100%;
+    /* justify-content:space-between; */
+    width: 120%;
     border-bottom: 1px solid #d5d5d5;
 }
 
-.lead, .wind, .erie, .alaska, .fishtown, .sdmexico, .moon, .chicago, .friendship, .drawing {
+.lead, .wind, .erie, .alaska, .fishtown, .sdmexico, .moon, .chicago, .friendship, .drawing, .oasis {
     width: 23rem;
 }
 
