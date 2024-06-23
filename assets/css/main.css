@@ -6,6 +6,7 @@ body {
     margin: 0px auto;
     width: 75%;
     color: #3f3f3f;
+    font-family: "Titillium Web", sans-serif;
 }
 
 .menu {
@@ -19,7 +20,7 @@ body {
 }
 
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: "Inter Tight", sans-serif;
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -41,12 +42,10 @@ a:hover {
 
 h1 {
     font-size: 35px;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 h2 {
     font-size: 30px;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     margin: 0;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -54,7 +53,6 @@ h2 {
 
 h3 {
     font-size: 25px;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     margin: 0;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -62,7 +60,6 @@ h3 {
 
 h4 {
     font-size: 20px;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     margin: 0;
     margin-top: 8px;
     margin-bottom: 8px;
@@ -70,7 +67,6 @@ h4 {
 
 h5 {
     font-size: 18px;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     margin: 0;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -85,6 +81,7 @@ p {
     margin-bottom: 5px;
     text-align: justify;
     text-align-last: left;
+    font-family: "Titillium Web", sans-serif;
 }
 
 ul {
@@ -94,7 +91,6 @@ ul {
 
 .notes li {
     font-size: 16px;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     margin: 0;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -148,8 +144,10 @@ img {
 .pinned {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 300px;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .portrait {
@@ -164,8 +162,9 @@ img {
 .resume {
     display: flex;
     flex-direction: column;
-    width: 850px;
-    margin-left: 50px;
+    width: calc(100% - 300px);
+    padding-left: 50px;
+    box-sizing: border-box;
 }
 
 hr {
@@ -200,7 +199,7 @@ hr {
 }
 
 .plink {
-    margin-right: 60px;
+    margin-right: 35px;
 }
 
 .geospatial, .ud, .la, .og {
@@ -213,7 +212,7 @@ hr {
 }
 
 .earthquaker, .lead, .wind, .erie, .alaska, .fishtown, .sdmexico, .moon, .chicago, .friendship, .drawing, .oasis {
-    width: 23rem;
+    width: 300px;
 }
 
 
