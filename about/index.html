@@ -8,9 +8,16 @@ title: About Me
     <div class="bar">
         <div class="pinned">
             <img class="portrait" src="/assets/img/portrait.png" alt="Portrait">
-            <p class="contact">junyi2022@berkeley.edu</p>
-            <p class="contact">510-693-2208</p>
-            <p class="contact">Philadelphia, Pennsylvania</p>
+            
+            <h5 class="social-media-label">{{ site.data.settings.social_label }}</h5>
+            <div>
+                {% for item in site.data.settings.social %}
+                    <a href="{{ item.link }}" target="_blank"><i class="social-icon {{ item.icon }}" aria-hidden="true"></i></a>
+                {% endfor %}
+            </div>
+            <p>510-693-2208</p>
+            <p>Philadelphia, Pennsylvania</p>
+            
         </div>
         
         
@@ -57,24 +64,55 @@ title: About Me
         <hr>
 
         <h3 class="resume-class">Employment</h3>
+        <div class="EMLab">
+            <div class="event">
+                <h5>The Ian L. McHarg Center, <a href="https://emlabupenn.com/" target="_blank">Environmental Modeling Lab (EMLab)</a></h5>
+                <p><em>Research Assistant | Supervisor(PI): Sean Burkholder</em></p>
+                <ul>
+                    <li><p>Develop a web-based geospatial classification methodology and typological design guidelines for coastal work along the Lake Erie shore of New York State</p></li>
+                    <li><p>Independent web development, customized landcover classification, GIS analysis, quantitative modeling, mapping, and data visualization</p></li>
+                </ul>
+            </div>
+            <div class="time">
+                <p><strong>Philadelphia, PA</strong></p>
+                <p>2023.09 - Present</p>
+            </div>
+        </div>
+
         <div class="Sasaki">
             <div class="event">
-                <h4><a href="https://www.sasaki.com/" target="_blank">Sasaki Associates</a></h4>
+                <h5><a href="https://www.sasaki.com/" target="_blank">Sasaki Associates</a></h5>
                 <p><em>Landscape Architecture Intern | Boston Office</em></p>
-                <p>Large-scale ADA accessibility planning, topology analysis, site grading</p>
-                <p>Parametric 3D modeling, view rendering, report preparation, community engagement</p>
+                <ul>
+                    <li><p>Large-scale ADA accessibility planning, topology analysis, site grading</p></li>
+                    <li><p>Parametric 3D modeling, view rendering, report preparation, community engagement</p></li>
+                </ul>
+                <p><em>Involved in Projects</em></p>
+                <ul>
+                    <li class="project-award">
+                        <em><a href="https://www.sasaki.com/projects/university-of-california-berkeley-accessible-paths-and-places-master-plan/" target="_blank">University of California, Berkeley Accessible Paths and Places Master Plan </a></em>
+                        <P class="p-small"><strong>Award:</strong> <a href="https://www.scup.org/award-winner/uc-berkeley-accessible-paths-and-places-master-plan/" target="_blank">Society for College and University Planning (SCUP) Jury's Choice Award</a></P>
+                    </li>
+                    <li class="project-award">
+                        <em>Vision 2050: An Integrated Facilities and Land Use Plan for Michigan State University</em>
+                        <P class="p-small"><strong>Award:</strong> <a href="https://www.scup.org/award-winner/michigan-state-university-vision-2050-an-integrated-facilities-and-land-use-plan-for-michigan-state-universit/" target="_blank">Society for College and University Planning (SCUP) Honorable Mention Award</a></P>
+                    </li>
+                </ul>
             </div>
             <div class="time">
                 <p><strong>Boston, MA</strong></p>
                 <p>2023.06 - 2023.8</p>
             </div>
         </div>
+
         <div class="SWA">
             <div class="event">
-                <h4><a href="https://www.swagroup.com/" target="_blank">The SWA Group</a></h4>
+                <h5><a href="https://www.swagroup.com/" target="_blank">The SWA Group</a></h5>
                 <p><em>Intern Landscape Designer | Los Angeles Office</em></p>
-                <p>Early stage site analysis and research, schematic design, and data analysis</p>
-                <p>DD phase construction drawing, grading, and 3D modeling</p>
+                <ul>
+                    <li><p>Early stage site analysis and research, schematic design, and data analysis</p></li>
+                    <li><p>DD phase construction drawing, grading, and 3D modeling</p></li>
+                </ul>
             </div>
             <div class="time">
                 <p><strong>Los Angeles, CA</strong></p>
@@ -82,34 +120,9 @@ title: About Me
             </div>
         </div>
 
-        <hr>
-
-        <h3 class="resume-class">Employment (Academic)</h3>
-        <div class="EMLab">
-            <div class="event">
-                <h4>The Ian L. McHarg Center, <a href="https://emlabupenn.com/" target="_blank">Environmental Modeling Lab (EMLab)</a></h4>
-                <p><em>Research Assistant | Supervisor(PI): Sean Burkholder</em></p>
-                <p>Develop a web-based geospatial classification methodology and typological design guidelines for coastal work along the Lake Erie shore of New York State</p>
-                <p>Independent web development, GIS analysis, quantitative modeling, mapping, and data visualization</p>
-            </div>
-            <div class="time">
-                <p><strong>Philadelphia, PA</strong></p>
-                <p>2023.09 - Present</p>
-            </div>
-        </div>
-        <div class="media2">
-            <div class="event">
-                <h4>LARP 5420 Media II: Digital Media</h4>
-                <p><em>Teaching Assistant | Instructor: Keith VanDerSys</em></p>
-            </div>
-            <div class="time">
-                <p><strong>Philadelphia, PA</strong></p>
-                <p>2024.01 - Present</p>
-            </div>
-        </div>
         <div class="sense">
             <div class="event">
-                <h4><a href="https://laplusjournal.com/" target="_blank">LA+ Journal</a>, LA+ SENSE</h4>
+                <h5><a href="https://laplusjournal.com/" target="_blank">LA+ Journal</a>, LA+ SENSE</h5>
                 <p><em>Pruduction Team | Editor in Chief: Karen M'Closkey</em></p>
             </div>
             <div class="time">
@@ -117,11 +130,25 @@ title: About Me
                 <p>2024.01 - Present</p>
             </div>
         </div>
+
+        <div class="media2">
+            <div class="event">
+                <h5>LARP 5420 Media II: Digital Media</h5>
+                <p><em>Teaching Assistant | Instructor: Keith VanDerSys</em></p>
+            </div>
+            <div class="time">
+                <p><strong>Philadelphia, PA</strong></p>
+                <p>2024.01 - Present</p>
+            </div>
+        </div>
+        
         <div class="MVZ">
             <div class="event">
-                <h4><a href="https://mvz.berkeley.edu/" target="_blank">UC Berkeley Museum of Vertebrate Zoology</a></h4>
+                <h5><a href="https://mvz.berkeley.edu/" target="_blank">UC Berkeley Museum of Vertebrate Zoology</a></h5>
                 <p><em>Research Assistant | Undergraduate Research Apprentice Program</em></p>
-                <p>Conduct research on the evolutionary relationship among raptor species through landmark annotation of geometric morphometrics of raptors' skull specimens</p>
+                <ul>
+                    <li><p>Conduct research on the evolutionary relationship among raptor species through landmark annotation of geometric morphometrics of raptors' skull specimens</p></li>
+                </ul>
             </div>
             <div class="time">
                 <p><strong>Berkeley, CA</strong></p>
@@ -132,9 +159,20 @@ title: About Me
         <hr>
 
         <h3 class="resume-class">Publication</h3>
+        <div class="publication">
+            <div class="event">
+                <h5>"Advancing Sustainable Urban Mobility: A GIS-Based Multi-Criteria Decision Analysis for Equitable Electric Vehicle Supply Equipment Deployment in Philadelphia" <a href="https://cartogis.org/docs/conferences/CaGIS_UCGIS_2024/Lightning%20Talk/CAGIS-UCGIS-2024_LightningTalk_Session3.pdf" target="_blank">Climate Smart GIScience: 2024 CAGIS+UCGIS Symposium</a></h5>
+                <p><em>Conference paper | Second Author</em></p>
+                <p>Multi-Criteria Decision Analysis, Analytic Hierarchy Process, Electric Vehicle Supply Equipment, Sustainable Transportation, Smart City.</p>
+            </div>
+            <div class="time">
+                <p><strong>Columbus, OH</strong></p>
+                <p>Summer 2024</p>
+            </div>
+        </div>
         <div class="Panaroma">
             <div class="event">
-                <h4>"Industrial Legacies & Open Space: Lead Contamination Level of Philadelphia Green Spaces" <a href="https://issuu.com/pennplanning/docs/pano24_fullbook_web_0403" target="_blank">Panaroma Vol. 32</a></h4>
+                <h5>"Industrial Legacies & Open Space: Lead Contamination Level of Philadelphia Green Spaces" <a href="https://issuu.com/pennplanning/docs/pano24_fullbook_web_0403" target="_blank">Panaroma Vol. 32</a></h5>
                 <p><em>Geospatial Dashboard | Individual Work</em></p>
                 <p>Develop an online dashboard tool to assist individuals in assessing the lead levels in Philadelphia's green spaces.</p>
             </div>
@@ -145,7 +183,7 @@ title: About Me
         </div>
         <div class="Panaroma">
             <div class="event">
-                <h4>"Delaware River Seasonal Cycles" <a href="https://issuu.com/pennplanning/docs/panorama_2023_book_pages" target="_blank">Panaroma Vol. 31</a></h4>
+                <h5>"Delaware River Seasonal Cycles" <a href="https://issuu.com/pennplanning/docs/panorama_2023_book_pages" target="_blank">Panaroma Vol. 31</a></h5>
                 <p><em>Data Visualization | Group Work</em></p>
                 <p>Research on Delaware River local fishing practices & how they've changed over time.</p>
             </div>
@@ -179,11 +217,11 @@ title: About Me
         <h5>Coding Languages</h5>
         <p>Python | JavaScript | CSS | HTML | R | SQL</p>
         <h5>Workflow/Other</h5>
-        <p>Git | Node | Mapbox | D3</p>
+        <p>Git | Node.js | Vue.js | Mapbox | Deck.gl | D3 | Google Cloud Platform | Carto</p>
+        <h5>Softwares</h5>
+        <p>Rhino | AutoCAD | ArcGIS | pgAdmin | Photoshop | Illustrator | Indesign | Grasshopper | Figma | VRay | Sketchup | Twinmotion | Blender</p>
         <h5>Physical</h5>
         <p>3D printing | Laser cut | CNC | Wood shop | CT scan | Watercolor | Charcoal</p>
-        <h5>Softwares</h5>
-        <p>Rhino | AutoCAD | ArcGIS | Adobe Suites | Grasshopper | Figma | VRay | Sketchup | Twinmotion | Blender</p>
 
         <hr>
 
