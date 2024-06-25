@@ -1,10 +1,11 @@
 html {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
     margin: 0px auto;
-    width: 75%;
+    width: 80%;
     color: #3f3f3f;
     font-family: "Titillium Web", sans-serif;
 }
@@ -143,8 +144,8 @@ img {
 
 .mountain {
     margin: 0;
-    margin-left: -17%;
-    width: 102vw;
+    margin-left: -13%;
+    width: 101vw;
 }
 
 /* About style */
@@ -152,7 +153,7 @@ img {
 .about {
     display: flex;
     flex-direction: row;
-    width: 110%;
+    width: 100%;
     margin-top: 3em;
     margin-bottom: 3em;
 }
@@ -177,8 +178,9 @@ img {
     margin-bottom: 50px;
 }
 
-.contact {
-    margin: 0;
+.social-icon {
+    font-size: 25px;
+    margin: 5px;
 }
 
 .resume {

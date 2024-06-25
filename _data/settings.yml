@@ -1,4 +1,4 @@
 social_label: Connect
 social:
-- {icon: 'github',    link: 'https://github.com/junyi2022'}
-- {icon: 'envelope',  link: 'mailto:mailto:l.nguyen.paul@gmail.com'}
+- {icon: 'fa-brands fa-github',    link: 'https://github.com/junyi2022'}
+- {icon: 'fa-regular fa-envelope',  link: 'mailto:yjymonica2012@gmail.com'}
