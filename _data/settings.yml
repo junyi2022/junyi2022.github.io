@@ -1,5 +1,4 @@
 social_label: Connect
 social:
-- {icon: 'github',    link: 'https://github.com/lenpaul'}
-- {icon: 'linkedin',  link: 'https://linkedin.com/in/lenpaul'}
+- {icon: 'github',    link: 'https://github.com/junyi2022'}
 - {icon: 'envelope',  link: 'mailto:mailto:l.nguyen.paul@gmail.com'}
