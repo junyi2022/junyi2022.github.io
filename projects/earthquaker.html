@@ -1,0 +1,41 @@
+---
+layout: default
+title: Projects by Categories
+---
+
+<link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/image-slider.css">
+
+<h3>EarthQuaker: A Cloud-Based Interactive Dashboard of Global Seismic Activities</h3>
+
+<div class="project-container">
+    <ul class="notes">
+        <li><strong>Time:</strong> 2024.04 - 2024.05, Academic work</li>
+        <li><strong>Collaboration:</strong> Emily Zhou</li>
+        <li><strong>Location:</strong> Global Scope</li>
+        <li><strong>Medium:</strong> Google Cloud, Web GL, D3</li>
+        <li><strong>Link:</strong> <a href="https://junyi2022.github.io/earthquaker/" target="_blank">EarthQuaker</a></li>
+    </ul>
+
+    
+    <div class="slider-container">
+        <a href="https://junyi2022.github.io/earthquaker/" target="_blank">
+            <div class="projectFlow storyImg">
+                <img class="projectDrawing" src="/assets/img/earthquaker-poster.jpg" alt="Project drawing">
+            </div>
+        </a>
+        
+    </div>
+</div>
+
+<div class="description">
+    <h5>Project description</h5>
+
+    <p class="p-description">EarthQuaker Dashboard is a project that displays historical seismic activity and provides comprehensive insights into earthquake occurrences worldwide.</p>
+    <p class="p-description">Our project relies on two types of data. The Earthquake data is provided by the USGS and can be accessed via their API on their official <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php"  target="_blank">webpage</a>. The continent data is available at the ArcGIS Hub and can also be accessed via their public API <a href="https://hub.arcgis.com/datasets/esri::world-continents/about"  target="_blank">online</a>.</p>
+    <p class="p-description">At the backend of our dashboard, this project is set up on Google Cloud with a series of cloud functions extracting, preparing, loading, and manipulating both the earthquake data and the continent data. The two datasets are joined and the top 200 earthquakes with the highest magnitude (excluding earthquakes at sea) are selected to be stored in a separate bucket. We've configured our workflow to run on the cloud every day, but it will only get to repeat the extract, prepare, and load process every 30 days. This is because on one hand, the USGS database is updated on a 30-day basis and we would like to be consistent with that. On the other hand, we would like our cloud storage to serve as a historical database of all earthquakes since Apr 2024. As such, updating the entire database every 30 days will allow us to get 30 days of completely new data from USGS without having overlapping earthquake occurrences in our cloud storage.</p>
+    <p class="p-description">At the front end of our project, we've mainly utilized <em>D3.js</em> and <em>Deck GL</em> to implement all of our visualizations. You may visualize earthquake hotspots and clusters of earthquakes with both high magnitude, significance, and frequency of occurrence. The hexagons are colored by earthquake magnitude and their height represents their significance, a proxy for the maximum MMI, felt reports, and estimated impact of an earthquake. You may also learn about the distribution of earthquakes by continent and by magnitude for the top 200 earthquakes with the highest magnitude. The locations of the top 200 earthquakes are iteratively shown at the side.</p>
+</div>
+
+
+<script src="../assets/js/image-slider.js" type="module"></script>

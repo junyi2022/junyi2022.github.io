@@ -1,0 +1,42 @@
+---
+layout: default
+title: Projects by Categories
+---
+
+<link rel="stylesheet" type="text/css" href="../../assets/css/main.css">
+<link rel="stylesheet" type="text/css" href="../../assets/css/image-slider.css">
+
+<h3>Philadelphia Census Block Group Gentrification Prediction Using Machine Learning</h3>
+
+<div class="project-container">
+    <ul class="notes">
+        <li><strong>Time:</strong> 2024.04 - 2024.05, Academic work</li>
+        <li><strong>Collaboration:</strong> Ziyi Guo, Haoyu Zhu</li>
+        <li><strong>Location:</strong> Philadelphia, Pennsylvania</li>
+        <li><strong>Medium:</strong> R</li>
+        <li><strong>Link:</strong> <a href="https://junyi2022.github.io/earthquaker/" target="_blank"> Philadelphia Census Block Group Gentrification Prediction Using Machine Learning</a></li>
+    </ul>
+
+    
+    <div class="slider-container">
+        <a href="https://junyi2022.github.io/Philadelphia-gentrification-prediction/predict-gentrification.html" target="_blank">
+            <div class="projectFlow storyImg">
+                <img class="projectDrawing" src="/assets/img/philly-gen.jpg" alt="Project drawing">
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="description">
+    <h5>Project description</h5>
+
+    <p class="p-description">This project aims to use machine learning methods to forecast patterns of gentrification in the unit of census block groups within Philadelphia. Gentrification, a complex socioeconomic phenomenon, has significant implications for urban development, housing affordability, and community dynamics. From the research of the <a href="https://www.urbandisplacement.org/about/what-are-gentrification-and-displacement/"  target="_blank">Urban Displacement Project</a>, gentrification is usually associated with real estate speculation, increased investment in neighborhood amenities such as transit and parks, change in land use, and changes in the character of the neighborhood such as business type change." These new investments often lead to displacement of existing low-income residents through rent increase, eviction, and other displacement pressure. Therefore, this project seeks to empower policymakers, urban planners, and community advocates to make informed decisions and implement equitable strategies for sustainable growth and inclusive development.</p>
+    <p class="p-description">This project will use the 2018 and 2019 data to train the machine learning model and use the 2017 and 2018 data to do the validation. There are two reasons for this decision. Firstly, the COVID pandemic in 2020 largely impacted the normal pattern of people's daily life, so we don't want our model to span across the year 2020. Secondly, the area of each census block group gets updated <a href="https://learn.arcgis.com/en/related-concepts/united-states-census-geography.htm#:~:text=Census%20blocks%20are%20often%20the,)%20or%20centroids%20(points)."  target="_blank">every decade</a>, so we are not able to get the same census block group before and after 2020.</p>
+    <p class="p-description">To summarize, this model employs demographic and economic indicators such as the percentage change of minority groups, median household income, and change in property value to analyze gentrification in Philadelphia. It incorporates additional socio-economic and urban amenities data to predict areas undergoing gentrification. The model focuses on accurately identifying true positive and true negative areas, aiming to pinpoint actual gentrified and non-gentrified locations effectively. It has been tested with data from the previous years and successfully identified most of the gentrified areas noted.</p>
+    <p class="p-description">Moving forward, this model serves as a valuable tool for city planners and policymakers to identify neighborhoods at risk of gentrification. It enables the development of strategies that promote balanced growth, including affordable housing initiatives and support for existing communities. The model's flexibility allows for ongoing refinement and incorporation of new data and trends, improving both its accuracy and applicability.</p>
+    <p class="p-description">Additionally, by tracking the effects of gentrification, the model can help mitigate adverse outcomes such as the displacement of lower-income families and the erosion of cultural heritage. It also provides community advocates and local stakeholders with data-driven insights, supporting efforts to advocate for inclusive urban policies.</p>
+    <p class="p-description">Looking ahead, future iterations of the model could integrate real-time data feeds, enhancing its responsiveness to rapid urban changes. This would facilitate more dynamic assessments of gentrification risks and enable more timely and effective interventions.</p>
+</div>
+
+
+<script src="../assets/js/image-slider.js" type="module"></script>
