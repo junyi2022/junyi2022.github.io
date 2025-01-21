@@ -148,6 +148,29 @@ img {
     width: 101vw;
 }
 
+/* opening page style */
+.blurb {
+    display: none;
+}
+
+#capcha-container {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.capcha-text {
+    width: 300px;
+    margin: 20px 0;
+}
+
 /* About style */
 
 .about {
