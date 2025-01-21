@@ -313,6 +313,35 @@ hr {
     column-gap: 15px;
 }
 
+/* .grid-container {
+    display: flex;
+    flex-direction: column;
+    height: 2000px;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+}
+
+.grid-box {
+    width: 25%;
+}
+
+.grid-box:nth-child(4n+1) {
+    order: 1;
+}
+
+.grid-box:nth-child(4n+2) {
+    order: 2;
+}
+
+.grid-box:nth-child(4n+3) {
+    order: 3;
+}
+
+.grid-box:nth-child(4n) {
+    order: 4;
+} */
+
 .img-gallery {
     border-radius: 15px;
     margin: 0;
